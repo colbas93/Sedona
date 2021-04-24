@@ -6,8 +6,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sedona</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/style.css">
+	<!-- <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+		crossorigin="anonymous"></script> -->
 	<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -30,7 +34,7 @@
 					<li class="menu__item"><a class="menu__link" href="#">Фото и видео</a></li>
 				</ul>
 				<!-- logo -->
-				<a href="index.html" class="logo">
+				<a href="#" class="logo">
 					<img class="logo__image" src="img/header/logo.svg" alt="logo Sedona" width="138" height="70">
 				</a>
 				<!-- menu -->
@@ -45,27 +49,25 @@
 			<h1 class="visually-hidden">Туристический сайт для путешественников Sedona</h1>
 			<!-- banner -->
 			<section class="banner">
-				<h2 class="visually-hidden">...</h2>
+				<h2 class="visually-hidden">Виды Седоны</h2>
 				<img class="banner__image" src="img/banner/welcome.svg" alt="empty">
 			</section>
 			<!-- features -->
 			<section class="features">
 				<h2 class="visually-hidden">Факты о Седоне</h2>
-				<p class="features__title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+				<p class="features__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
 				<p class="features__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 				<!-- grid -->
 				<div class="features-grid">
 					<!-- line -->
-					<div class="features__row">
-						<div class="features-item features-item--left features-item--blue">
-							<h3 class="features-item__title">Настоящий<br>городок</h3>
-							<p class="features-item__number">— №1 —</p>
-							<p class="features-item__description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-						</div>
-						<img src="img/features/image1.jpg" alt="empty" class="features__image features__image--right">
+					<div class="features-item features-item--blue">
+						<h3 class="features-item__title">Настоящий<br>городок</h3>
+						<p class="features-item__number">— №1 —</p>
+						<p class="features-item__description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
 					</div>
+					<img src="img/features/image1.jpg" alt="empty" class="features__image features__image--right">
 					<!-- line -->
-					<ul class="features__row">
+					<ul class="features__list">
 						<li class="features-item features-item--icon">
 							<img src="img/features/icon-1.svg" alt="Жильё" class="features-item__ico">
 							<h3 class="features-item__title">Жильё</h3>
@@ -83,33 +85,28 @@
 						</li>
 					</ul>
 					<!-- line -->
-					<div class="features__row">
-						<img src="img/features/image2.jpg" alt="empty" class="features__image features__image--left">
-						<div class="features-item features-item--right features-item--blue">
-							<h3 class="features-item__title">Там есть<br>Мост дьявола</h3>
-							<p class="features-item__number">— №2 —</p>
-							<p class="features-item__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-						</div>
+					<img src="img/features/image2.jpg" alt="empty" class="features__image features__image--left">
+					<div class="features-item features-item--blue">
+						<h3 class="features-item__title">Там есть<br>Мост дьявола</h3>
+						<p class="features-item__number">— №2 —</p>
+						<p class="features-item__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 					</div>
 					<!-- line -->
-					<ul class="features__row">
-						<li class="features-item features-item--brown">
-							<h3 class="features-item__title">небольшая<br> площадь</h3>
-							<p class="features-item__number">— №3 —</p>
-							<p class="features-item__description">все достопримечательности находятся очень близко</p>
-						</li>
-						<li class="features-item features-item--brown">
-							<h3 class="features-item__title">красивая<br>дорога</h3>
-							<p class="features-item__number">— №4 —</p>
-							<p class="features-item__description">ехать в седону из лас-вегаса совсем не скучно!</p>
-						</li>
-						<li class="features-item features-item--brown">
-							<h3 class="features-item__title">мало<br> туристов</h3>
-							<p class="features-item__number">— №5 —</p>
-							<p class="features-item__description">большинство едет в гранд каньон и толпится там</p>
-						</li>
-					</ul>
-				</div>
+					<div class="features-item features-item--brown">
+						<h3 class="features-item__title">небольшая<br> площадь</h3>
+						<p class="features-item__number">— №3 —</p>
+						<p class="features-item__description">все достопримечательности находятся очень близко</p>
+					</div>
+					<div class="features-item features-item--brown">
+						<h3 class="features-item__title">красивая<br>дорога</h3>
+						<p class="features-item__number">— №4 —</p>
+						<p class="features-item__description">ехать в седону из лас-вегаса совсем не скучно!</p>
+					</div>
+					<div class="features-item features-item--brown">
+						<h3 class="features-item__title">мало<br> туристов</h3>
+						<p class="features-item__number">— №5 —</p>
+						<p class="features-item__description">большинство едет в гранд каньон и толпится там</p>
+					</div>
 			</section>
 			<!-- booking -->
 			<section class="booking">
@@ -121,44 +118,55 @@
 						седоне</p>
 					<a class="booking__btn js-booking" href="#">Поиск гостиницы в седоне</a>
 					<!-- form -->
-					<form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+					<form class="booking-form booking-form--show" action="https://echo.htmlacademy.ru" method="post">
 						<!-- date -->
 						<div class="booking-form__group">
 							<label class="booking-form__label" for="date-arrival">Дата заезда:</label>
-							<input type="text" value="24 апреля 2017" name="date-arrival" class="booking-form__field js-date"
+							<input type="text" placeholder="24 апреля 2017" name="date-arrival" class="booking-form__field js-date"
 								id="date-arrival">
 						</div>
 						<!-- date -->
 						<div class="booking-form__group">
 							<label class="booking-form__label" for="date-departure">Дата выезда:</label>
-							<input type="text" value="4 июля 2017" name="date-departure" class="booking-form__field js-date"
+							<input type="text" placeholder="4 июля 2017" name="date-departure" class="booking-form__field js-date"
 								id="date-departure">
 						</div>
 						<!-- number -->
 						<div class="booking-form__group">
 							<label class="booking-form__label" for="adults">Взрослые:</label>
-							<div class="booking-form__inner">
-								<button class="booking-form__control js-minus">
+							<div class="booking-form__inner" data-step="1" data-min="1" data-max="100">
+								<button type="button" class="booking-form__control js-minus">
 									<svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="12" height="3" fill="none" />
 									</svg>
 								</button>
-								<input type="text" name="adults" value="2" id="adults">
-								<button class="booking-form__control js-plus">
+								<input class="number-text" type="text" name="adults" value="1" id="adults">
+								<button type="button" class="booking-form__control js-plus">
 									<svg width="11" height="11" viewBox="0 0 11 11" fill="#a9a9a9" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" clip-rule="evenodd"
 											d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
-											fill="#A9A9A9" />
+											fill="none" />
 									</svg>
 								</button>
 							</div>
 						</div>
 						<!-- number -->
-						<div class="booking-form__group">
+						<div class="booking-form__group" data-step="1" data-min="1" data-max="100">
 							<label class="booking-form__label" for="children">Дети:</label>
 							<div class="booking-form__inner">
-								<button class="booking-form__control js-minus"></button>
+								<button type="button" class="booking-form__control js-minus">
+									<svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="12" height="3" fill="none" />
+									</svg>
+								</button>
 								<input type="text" name="children" value="0" id="children">
-								<button class="booking-form__control js-plus"></button>
+								<button type="button" class="booking-form__control js-plus">
+									<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+											fill="none" />
+									</svg>
+								</button>
 							</div>
 						</div>
 						<!-- btn -->
@@ -171,7 +179,7 @@
 					width="100%"></iframe>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer footer--index">
 			<!-- contact -->
 			<div class="footer__contact">
 				<a class="footer__hash" href="#">#VISITSEDONA</a>

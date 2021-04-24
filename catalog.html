@@ -6,15 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sedona catalog</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/nouislider.min.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/star-rating-svg.css"> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
   <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-	<link rel="manifest" href="/favicon/site.webmanifest">
-	<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#81b3d2">
-	<meta name="theme-color" content="#81b3d2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#81b3d2">
+  <meta name="theme-color" content="#81b3d2">
 </head>
 
 <body class="page-body">
@@ -47,7 +54,7 @@
       <section class="catalog">
         <h2 class="visually-hidden">Каталог</h2>
         <!-- form -->
-        <div class="catalog-form--background">
+        <div class="catalog-filter">
           <form class="catalog-form" method="POST" action="https://echo.htmlacademy.ru">
             <!-- fieldset-checkbox -->
             <fieldset class="fieldset">
@@ -92,15 +99,15 @@
               <div class="form-control">
                 <label class="control__label">
                   <span class="control__label-text">От</span>
-                  <input class="control__input" type="text" value="0" name="control-min">
+                  <input class="control__input" type="number" placeholder="0" name="control-min" id="input-0">
                 </label>
                 <label class="control__label">
                   <span class="control__label-text">До</span>
-                  <input class="control__input" type="text" value="3000" name="control-max">
+                  <input class="control__input" type="number" placeholder="3000" name="control-max" id="input-1">
                 </label>
               </div>
               <!-- form-slider -->
-              <div class="form__slider"></div>
+              <div class="control__slider" id="range-slider"></div>
               <button class="catalog-form__btn" type="submit">Показать</button>
             </fieldset>
           </form>
@@ -153,10 +160,26 @@
             <!-- card-column-right -->
             <div class="card__column card__column--right">
               <!-- rating -->
-              <div class="rating"></div>
-              <p class="rating__text">Рейтинг:
-                <span class="rating__value">8,5</span>
-              </p>
+              <div class="rating ratign_set">
+                <div class="rating__body">
+                  <div class="rating__active"></div>
+                  <div class="rating__items">
+                    <input type="radio" class="rating__item" value="1" name="rating">
+                    <input type="radio" class="rating__item" value="2" name="rating">
+                    <input type="radio" class="rating__item" value="3" name="rating">
+                    <input type="radio" class="rating__item" value="4" name="rating">
+                    <input type="radio" class="rating__item" value="5" name="rating">
+                    <input type="radio" class="rating__item" value="6" name="rating">
+                    <input type="radio" class="rating__item" value="7" name="rating">
+                    <input type="radio" class="rating__item" value="8" name="rating">
+                    <input type="radio" class="rating__item" value="9" name="rating">
+                    <input type="radio" class="rating__item" value="10" name="rating">
+                  </div>
+                </div>
+                <p class="rating__value--inner">Рейтинг:
+                  <span class="rating__value">8.5</span>
+                </p>
+              </div>
             </div>
           </li>
           <!-- card -->
@@ -179,10 +202,26 @@
             <!-- card-column-right -->
             <div class="card__column card__column--right">
               <!-- rating -->
-              <div class="rating"></div>
-              <p class="rating__text">Рейтинг:
-                <span class="rating__value">8,9</span>
-              </p>
+              <div class="rating ratign_set">
+                <div class="rating__body">
+                  <div class="rating__active"></div>
+                  <div class="rating__items">
+                    <input type="radio" class="rating__item" value="1" name="rating">
+                    <input type="radio" class="rating__item" value="2" name="rating">
+                    <input type="radio" class="rating__item" value="3" name="rating">
+                    <input type="radio" class="rating__item" value="4" name="rating">
+                    <input type="radio" class="rating__item" value="5" name="rating">
+                    <input type="radio" class="rating__item" value="6" name="rating">
+                    <input type="radio" class="rating__item" value="7" name="rating">
+                    <input type="radio" class="rating__item" value="8" name="rating">
+                    <input type="radio" class="rating__item" value="9" name="rating">
+                    <input type="radio" class="rating__item" value="10" name="rating">
+                  </div>
+                </div>
+                <p class="rating__value--inner">Рейтинг:
+                  <span class="rating__value">8.9</span>
+                </p>
+              </div>
             </div>
           </li>
           <!-- card -->
@@ -206,10 +245,26 @@
             <!-- card-column-right -->
             <div class="card__column card__column--right">
               <!-- rating -->
-              <div class="rating"></div>
-              <p class="rating__text">Рейтинг:
-                <span class="rating__value">9,2</span>
-              </p>
+              <div class="rating ratign_set">
+                <div class="rating__body">
+                  <div class="rating__active"></div>
+                  <div class="rating__items">
+                    <input type="radio" class="rating__item" value="1" name="rating">
+                    <input type="radio" class="rating__item" value="2" name="rating">
+                    <input type="radio" class="rating__item" value="3" name="rating">
+                    <input type="radio" class="rating__item" value="4" name="rating">
+                    <input type="radio" class="rating__item" value="5" name="rating">
+                    <input type="radio" class="rating__item" value="6" name="rating">
+                    <input type="radio" class="rating__item" value="7" name="rating">
+                    <input type="radio" class="rating__item" value="8" name="rating">
+                    <input type="radio" class="rating__item" value="9" name="rating">
+                    <input type="radio" class="rating__item" value="10" name="rating">
+                  </div>
+                </div>
+                <p class="rating__value--inner">Рейтинг:
+                  <span class="rating__value">9.2</span>
+                </p>
+              </div>
             </div>
           </li>
         </ul>
@@ -243,7 +298,10 @@
         </svg>
       </a>
     </footer>
+    <script src="js/nouislider.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/rage-slider.js"></script>
+    <!-- <script src="js/jquery.star-rating-svg.js"></script> -->
   </div>
 </body>
 
