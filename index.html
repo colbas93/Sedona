@@ -8,7 +8,8 @@
 	<title>Sedona</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/vendor/nouislider.min.css">
+  <link rel="stylesheet" href="css/vendor/custom.css">
 	<link rel="stylesheet" href="css/style.css">
 	<!-- <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
 		crossorigin="anonymous"></script> -->
@@ -134,13 +135,13 @@
 						<!-- number -->
 						<div class="booking-form__group">
 							<label class="booking-form__label" for="adults">Взрослые:</label>
-							<div class="booking-form__inner" data-step="1" data-min="1" data-max="100">
+							<div class="booking-form__inner number" data-step="1" data-min="1" data-max="10">
 								<button type="button" class="booking-form__control js-minus">
 									<svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<rect width="12" height="3" fill="none" />
 									</svg>
 								</button>
-								<input class="number-text" type="text" name="adults" value="1" id="adults">
+								<input class="number-text" type="text" name="adults" value="1">
 								<button type="button" class="booking-form__control js-plus">
 									<svg width="11" height="11" viewBox="0 0 11 11" fill="#a9a9a9" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" clip-rule="evenodd"
@@ -151,15 +152,15 @@
 							</div>
 						</div>
 						<!-- number -->
-						<div class="booking-form__group" data-step="1" data-min="1" data-max="100">
+						<div class="booking-form__group">
 							<label class="booking-form__label" for="children">Дети:</label>
-							<div class="booking-form__inner">
+							<div class="booking-form__inner number" data-step="1" data-min="1" data-max="10">
 								<button type="button" class="booking-form__control js-minus">
 									<svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<rect width="12" height="3" fill="none" />
 									</svg>
 								</button>
-								<input type="text" name="children" value="0" id="children">
+								<input class="number-text" type="text" name="children" value="0" id="children">
 								<button type="button" class="booking-form__control js-plus">
 									<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" clip-rule="evenodd"
@@ -207,6 +208,7 @@
 			</a>
 		</footer>
 	</div>
+	<script src="js/vendor/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 
